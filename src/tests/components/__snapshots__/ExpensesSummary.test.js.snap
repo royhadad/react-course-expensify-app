@@ -1,27 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should match snapshot with 1 expense 1`] = `
+exports[`should correctly render ExpenseSumary with 1 expense 1`] = `
 <div>
-  <p>
+  <h1>
     viewing 
     1
      
     expense
      totalling 
     $1.95
-  </p>
+  </h1>
 </div>
 `;
 
-exports[`should match snapshot with all 3 expenses 1`] = `
+exports[`should correctly render ExpenseSumary with all 3 expenses 1`] = `
 <div>
-  <p>
+  <h1>
     viewing 
     3
      
     expenses
      totalling 
     $1,141.95
-  </p>
+  </h1>
 </div>
 `;
