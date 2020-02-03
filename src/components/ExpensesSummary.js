@@ -10,9 +10,9 @@ export class ExpensesSummary extends React.Component {
         const formattedExpensesTotal = numeral(this.props.expensesTotal / 100).format('$0,0.00');
         return (
             <div>
-                <p>
+                <h1>
                     viewing {this.props.expenseCount} {expenseWord} totalling {formattedExpensesTotal}
-                </p>
+                </h1>
             </div>
         );
     }
