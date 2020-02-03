@@ -2,6 +2,7 @@
 
 exports[`should render ExpenseDashboardPage properly with no props 1`] = `
 <div>
+  4
   <Connect(ExpenseListFilters) />
   <Connect(ExpenseList) />
 </div>
