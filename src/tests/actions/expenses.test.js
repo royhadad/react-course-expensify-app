@@ -1,4 +1,4 @@
-import { startAddExpense, addExpense, editExpense, removeExpense, setExpenses, startSetExpenses } from '../../actions/expenses';
+import { startAddExpense, addExpense, editExpense, removeExpense, setExpenses, startSetExpenses, startRemoveExpense } from '../../actions/expenses';
 import expenses from '../fixtures/expenses';
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
@@ -112,4 +112,14 @@ test('should fetch expense data from test DB', (done) => {
             expect(actions[0]).toEqual(setExpenses(expenses));
             done();
         })
-})
+});
+
+test('should remove expense from test DB', (done) => {
+    const store = createMockStore({});
+    store.dispatch(startRemoveExpense(expenses[0].id))
+        .then(() => {
+            const actions = store.getActions();
+            expect(actions[0]).toEqual(removeExpense({ id: expenses[0].id }));
+            done();
+        });
+});
