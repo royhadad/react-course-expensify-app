@@ -5,25 +5,10 @@ exports[`should render LoginPage correctly 1`] = `
   <h1>
     Login
   </h1>
-  <form
-    onSubmit={[Function]}
+  <button
+    onClick={[MockFunction]}
   >
-    <input
-      autoFocus={true}
-      onChange={[Function]}
-      placeholder="username"
-      type="text"
-      value=""
-    />
-    <input
-      onChange={[Function]}
-      placeholder="password"
-      type="text"
-      value=""
-    />
-    <button>
-      login
-    </button>
-  </form>
+    Login
+  </button>
 </div>
 `;
